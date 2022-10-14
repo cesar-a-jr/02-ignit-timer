@@ -51,8 +51,16 @@ export const HistoryList = styled.div`
         width: 50%;
         padding-left: 1.5rem;
       }
+
       &:last-child {
         padding-right: 1.5rem;
+      }
+
+      @media (max-width: 1024px) {
+        &:first-child {
+          width: auto;
+          padding-left: 1.5rem;
+        }
       }
     }
   }

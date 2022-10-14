@@ -13,6 +13,10 @@ export const HomeContainer = styled.main`
     flex-direction: column;
     align-items: center;
     gap: 3.5rem;
+
+    @media (max-width: 1024px) {
+      gap: 1.5rem;
+    }
   }
 `
 
@@ -69,6 +73,10 @@ export const StartCountdownButton = styled.button`
   &:not(:disabled):hover {
     background: ${(props) => props.theme['green-700']};
   }
+
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
 `
 
 export const StopCountdownButton = styled.button`
@@ -93,5 +101,9 @@ export const StopCountdownButton = styled.button`
 
   &:hover {
     background: ${(props) => props.theme['red-700']};
+  }
+
+  @media (max-width: 1024px) {
+    width: 80%;
   }
 `

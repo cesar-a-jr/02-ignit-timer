@@ -18,6 +18,10 @@ const BaseInput = styled.input`
   &::placeholder {
     color: ${(props) => props.theme['gray-500']};
   }
+
+  @media (max-width: 1024px) {
+    font-size: 0.785rem;
+  }
 `
 
 export const TaskInput = styled(BaseInput)`
@@ -42,4 +46,9 @@ export const FormContainer = styled.div`
   font-size: 1.25rem;
   font-weight: bold;
   flex-wrap: wrap;
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+    width: 75%;
+  }
 `
